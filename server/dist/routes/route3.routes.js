@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.router3 = void 0;
+const controler3_controller_1 = require("../Controllers/controler3.controller");
+const express = require("express");
+let cors = require('cors');
+const app = express();
+app.use(cors());
+console.log("kjsabl");
+exports.router3 = express.Router();
+exports.router3.get("/", controler3_controller_1.thirdController);

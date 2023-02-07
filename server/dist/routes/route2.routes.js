@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.router2 = void 0;
+const controler2_controller_1 = require("../Controllers/controler2.controller");
+const express = require("express");
+let cors = require('cors');
+const app = express();
+app.use(cors());
+exports.router2 = express.Router();
+exports.router2.get("/", controler2_controller_1.secondController);
